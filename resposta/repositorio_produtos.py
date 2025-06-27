@@ -110,13 +110,8 @@ def pesquisar_produtos_por_intervalo_nota(nota_min: float, nota_max: float) -> l
 
 
 if __name__ == "__main__":
-    resultado1 = pesquisar_produto_por_nome()
-    resultado2 = listar_produtos()
-    resultado3 = pesquisar_produtos_por_intervalo_valor()
-    resultado4 = pesquisar_produtos_por_intervalo_nota()
-    resultado5 = buscar_produtos_no_html()
-    print(resultado1)
-    print(resultado2)
-    print(resultado3)
-    print(resultado4)
-    print(resultado5)
+    print(pesquisar_produto_por_nome("geladeira"))
+    print(listar_produtos())
+    print(pesquisar_produtos_por_intervalo_valor(2000, 5000))
+    print(pesquisar_produtos_por_intervalo_nota(4.0, 5.0))
+
